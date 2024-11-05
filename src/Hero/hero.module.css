@@ -1,0 +1,96 @@
+.header {
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  height: 100vh;
+  background-image: url("../assets/hero.jpeg");
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  align-items: center;
+}
+
+.nav img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(143deg)
+    brightness(103%) contrast(102%);
+}
+
+.nav .logo {
+  margin-left: 3%;
+  width: 8%;
+}
+
+.navButtons {
+  width: 33%;
+}
+
+.navButtons ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+.navButtons ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navIcons {
+  width: 7%;
+  margin-right: 2.5%;
+}
+
+.navIcons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navIcons ul li a {
+  text-decoration: none;
+}
+
+.navIcons ul li a img {
+  width: 1.6rem;
+}
+
+.centerContainer {
+  margin: 3rem auto;
+  display: flex;
+  gap: 2rem;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.centerContainer h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+  transform: scaleY(1.1);
+}
+
+.centerContainer .headerButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.centerContainer .headerButtons button {
+  width: 48%;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: rgb(41, 41, 41);
+  border: none;
+  border-radius: 0.3em;
+}
