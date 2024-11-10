@@ -24,16 +24,18 @@
 
 .container .textContainer h2 {
   font-size: 2rem;
-}
-
-.container .textContainer hr {
-  height: 2px;
-  width: 45%;
-  background-color: white;
+  padding: 0.2rem;
+  border-bottom: 2px solid white;
+  /* text-decoration: underline;
+  text-decoration-thickness: 1.5px; */
 }
 
 .container .textContainer h3 {
   font-size: 1.2rem;
+  max-width: 28ch;
+  text-align: center;
+  /* border: 2px solid green; */
+  padding: 0.2rem;
 }
 
 .container .buttons {
@@ -49,12 +51,9 @@
   height: 2.5rem;
   font-size: 0.9rem;
   border: none;
-  background-color: white;
   border-radius: 0.3rem;
 }
 
 .container .buttons button:first-of-type {
-  border: none;
-  background-color: #3e6ae1;
   color: white;
 }

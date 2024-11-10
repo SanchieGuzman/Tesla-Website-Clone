@@ -1,20 +1,48 @@
 import styles from "./cars.module.css";
 
-function Cars(props) {
+function Cars({
+  bgImage,
+  model,
+  subText,
+  lowerText,
+  // demoButtonUrl,
+  // orderButtonUrl,
+  orderButtonBackgroundColor = "#3e6ae1",
+  demoButtonBackgroundColor = "white",
+
+  orderButtonColor = "whites",
+  demoButtonColor = "black",
+
+  subtextStyle = "2px solid white",
+  lowerTextStyle = "none",
+}) {
   return (
     <div
       className={styles.container}
-      style={{ backgroundImage: `url(${props.bgImage})` }}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.textContainer}>
-        <h1>{props.model}</h1>
-        <h2>{props.subText}</h2>
-        <hr />
-        <h3>{props.lowerText}</h3>
+        <h1>{model}</h1>
+        <h2 style={{ borderBottom: subtextStyle }}>{subText}</h2>
+        <h3 style={{ textDecoration: lowerTextStyle }}>{lowerText}</h3>
       </div>
       <div className={styles.buttons}>
-        <button>Order Now</button>
-        <button>Demo Drive</button>
+        <button
+          style={{
+            backgroundColor: orderButtonBackgroundColor,
+            color: orderButtonColor,
+          }}
+        >
+          Order Now
+        </button>
+        <button
+          style={{
+            backgroundColor: demoButtonBackgroundColor,
+            color: demoButtonColor,
+          }}
+        >
+          Demo Drive
+        </button>
       </div>
     </div>
   );

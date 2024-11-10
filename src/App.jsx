@@ -24,14 +24,18 @@ function App() {
         model="Model X"
         subText="From $65,990"
         lowerText="After Federal Tax Credit $7,500
-and Est. Gas Savings $6,500"
+        and Est. Gas Savings $6,500"
         bgImage={modelX}
+        subtextStyle="none"
+        lowerTextStyle="underline"
       />
       <Cars
         model="Model S"
-        subText="0% APR Available"
-        lowerText="Lease Starting at $299/mo"
+        subText="From $68,490"
+        lowerText="After Est. Gas Savings $6,500"
         bgImage={modelS}
+        subtextStyle="none"
+        lowerTextStyle="underline"
       />
     </>
   );
